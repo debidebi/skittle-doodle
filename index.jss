@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   c = document.querySelector('#canvas');
   window.dispatchEvent(new Event('resize'));
   ctx = c.getContext('2d');
- //hex = '#'+ Math.floor(Math.random()*16777215).toString(16);
+ hex = '#'+ Math.floor(Math.random()*16777215).toString(16);
   
-  //ctx.fillStyle = (hex.length === 7) ? hex : "#d3d3d3";
+  ctx.fillStyle = (hex.length === 7) ? hex : "#d3d3d3";
   
 
   c.addEventListener('mousemove', (e) => {
